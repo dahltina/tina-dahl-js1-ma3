@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: rgb(255, 255, 240); 
+    color: darkslateblue;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.loading {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid rgb(219, 228, 238);
+    border-top: 20px solid darkslateblue;
+    animation: spin 3s linear infinite;
+}
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.container {
+    margin: 0 auto;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result {
+    height: 150px;
+    width: 150px;
+    border: 1px solid darkslateblue;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.error {
+    text-transform: uppercase;
+    border: 1px solid red;
+    color: red;
+    padding: 10px;
+}
